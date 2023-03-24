@@ -37,35 +37,24 @@ const SingleMovie = () => {
   }, [id]);
 
   if (isLoading) {
-    return (
-      <div className=" flex justify-center items-center text-white bg-slate-700 h-screen">
-        Loading....
-      </div>
-    );
+    return <div className="singleMovie__loader">Loading....</div>;
   }
   return (
     <>
-      <div className="flex items-center justify-center h-screen bg-slate-700">
-        <div className="bg-white rounded lg:w-2/6 w-58">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2">
+      <div className="singleMovie__wrapper">
+        <div className="singleMovie__div">
+          <div className="singleMovie__container">
             <div>
-              <img
-                src={movies.Poster}
-                alt="img"
-                className="w-full h-80 object-cover rounded-l"
-              />
+              <img src={movies.Poster} alt="img" className="singleMovie__img" />
             </div>
-            <div className="lg:py-7 py-3 lg:px-0 px-7  lg:space-y-3 space-y-1">
-              <h1 className="text-xl ">{movies.Title}</h1>
+            <div className="singleMovie__header">
+              <h1 className="">{movies.Title}</h1>
               <p>{movies.Released}</p>
               <p>{movies.Ratings[0].Value}</p>
               <p>{movies.Writer}</p>
               <p>{movies.imdbVotes}</p>
-              <button
-                onClick={BtnHandler}
-                className="px-4 py-2 flex gap-3 border-slate-700 border duration-300 hover:bg-slate-700 hover:text-white tracking-wider rounded"
-              >
-                <ArrowNarrowLeftIcon className="h-6 w-6" />
+              <button onClick={BtnHandler} className="singleMovie__btn">
+                <ArrowNarrowLeftIcon className="singleMovie__icon" />
                 Go Back
               </button>
             </div>
