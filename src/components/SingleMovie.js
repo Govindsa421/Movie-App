@@ -38,11 +38,9 @@ const SingleMovie = () => {
 
   if (isLoading) {
     return (
-      <>
-        <div className=" flex justify-center items-center text-white bg-slate-700 h-screen">
-          Loading....
-        </div>
-      </>
+      <div className=" flex justify-center items-center text-white bg-slate-700 h-screen">
+        Loading....
+      </div>
     );
   }
   return (

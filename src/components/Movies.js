@@ -6,11 +6,7 @@ const Movies = () => {
   const { movies, isLoading } = useGlobalContext();
 
   if (isLoading) {
-    return (
-      <>
-        <div className="text-center py-20">Loading....</div>;
-      </>
-    );
+    return <div className="text-center py-20">Loading....</div>;
   }
   return (
     <div className="mx-auto max-w-6xl">
