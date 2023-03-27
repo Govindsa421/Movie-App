@@ -58,7 +58,7 @@
     @apply lg:py-7 py-3 lg:px-0 px-7  lg:space-y-3 space-y-1;
   }
   .singleMovie__btn {
-    @apply px-4 py-2 flex gap-3 border-slate-700 border duration-300 hover:bg-slate-700 hover:text-white tracking-wider rounded;
+    @apply px-4 py-2 flex gap-3 border-slate-700 bovalo hover:bg-slate-700 hover:text-white tracking-wider rounded;
   }
   .singleMovie__icon {
     @apply h-6 w-6;
